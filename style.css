@@ -3,22 +3,17 @@ body {
     padding: 0;
 }
 
-/* Header Section */
-/* header {
+/* Header Section */ */
+header {
     background-color: #E7E9FC;
-
-} */
-
-.wrapper {
-    display: flex;
+    width: 100%;
+}
+.container{
     max-width: 1128px;
-    align-items: center;
+    display: flex;
     margin: auto;
     justify-content: space-between;
-}
-
-.wrapper a {
-    text-decoration: none;
+    align-items: center;
 }
 
 .logo {
@@ -27,39 +22,250 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 21px;
-    margin: 25px 76px 25px 0;
+    margin: auto;
 }
-
-.navbar {
-    margin: 24px 0 24px 0;
-}
-
-.menu {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu li {
-    margin-right: 40px;
-}
-
-.menu a {
+a{
     text-decoration: none;
 }
 
-.menu p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
+ul{
+    list-style: none;
 }
 
-.wrapper_main {
-    margin-left: auto;
-    margin-right: auto;
+.navbar {
+    text-decoration: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navmenu{
+    margin-left: 76px;
+    display: flex;
+    gap: 40px;
+}
+.navmenu a {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: #2E2F42;
+}
+
+.contacts{
+    display: flex;
+    gap: 40px;
+}
+
+.contacts a{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: #434455;
+}
+
+/* Above-the-fold Section */
+
+.title_banner{
+    width: 100%;
+    min-height: 600px;
+    background-color: #2E2F42;
+    display: flex;
+}
+.title_wrapper{
+    max-width: 496px;
+    margin: auto;
+    text-align: center;
+    }
+.title_wrapper h1{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 60px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+}
+.title_wrapper button{
+    padding: 16px 32px;
+    background: #4D5AE5;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+}
+
+/* Features section */
+
+.features_wrapper{
+    padding: 0px;
+    gap: 24px;
     max-width: 1128px;
+    display: flex;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 120px
+}
+.features_wrapper h3{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: #2E2F42;
+        margin: 0;
+}
+.features_wrapper p{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: #434455;
+}
+
+/* What are we doing section */
+
+.activities_wrapper{
+    max-width: 1128px;
+    margin: auto;
+    text-align: center;
+}
+.activities_wrapper ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+.activities_wrapper h2{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: #2E2F42;
+}
+
+/* Our Team section */
+
+.team_wrapper{
+    background-color: #F4F4FD;
+    text-align: center;
+    padding: 120px 0;
+}
+.team_wrapper h2{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: #2E2F42;
+        margin: 0 0 72px 0;
+}
+.team_wrapper ul{
+    padding: 0;
+    max-width: 1128px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+.team_wrapper li{
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        border-radius: 0px 0px 4px 4px;
+}
+.team_wrapper h3{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #2E2F42;
+}
+.team_wrapper p{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #434455;
+}
+
+/* Footer section */
+
+footer{
+    background-color: #2E2F42;
+    padding: 100px 0 100px 156px;
+}
+footer a{
+    margin-bottom: 18px;
+}
+footer p{
+    max-width: 264px;
+    margin: 0;
+    margin-top: 18px;
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: #F4F4FD;
+}
+.span1{
+    font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #4D5AE5;
+}
+.span2{
+    font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #F4F4FD;
+}
+.span3{
+    font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #2E2F42;;
 }
